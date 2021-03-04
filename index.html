@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Kezzy's restaurant</title>
+
+        	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!--icons-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+/* CSS Document */    
+h1{
+    color: crimson;
+    font-size: 30px;
+    background-image: url(https://restaurantengine.com/wp-content/uploads/2015/05/startup-restaurants-typically-overspend.jpg);
+	background-size: 100%;
+  }
+
+  .navbar ul li{
+    list-style: none;
+    width: 100%;
+  }
+.navbar ul li a{
+  float: left;
+  color: black;
+  text-align: justify;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.navbar ul li a:hover{
+  background-color: rgb(248, 90, 117);
+}
+
+form{
+ background-image: url();
+  position: absolute;
+  left: 50%;
+    margin-top: 30px;
+    text-align: center;
+    width: 300px;
+    height: 500px;
+    border: 1px salmon solid;
+    border-radius: 10px;
+}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 60%;
+  padding: 5px;
+  margin: 5px 5px 5px 5px;
+  border: 1px black solid;
+  border-radius: 10px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+}
+
+/* Set a style for the form button */
+.btn {
+  background-color:crimson;
+  padding: 10px;;
+  margin: 5px 5px 15px 5px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 65%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.signup form{
+  text-align: center;
+  margin-top: 30px;
+  width: 500px;
+  height: auto;
+  border: 1px salmon solid;
+  border-radius: 10px;
+}
+form .form-footer a{
+  text-decoration: none;
+  color: crimson;
+}
+
+.btn .reset-password-btn{
+  background-color:crimson;
+  padding: 10px;;
+}
+.reset-password .email-textbox input[type=text]{
+  border: none;
+  border-radius: 4px ;
+}
+.card{
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+.card .card-body a{
+  text-decoration: none;
+  color: black;
+}
+.card .card-body a:hover{
+  background-color: crimson;
+  font-size: 18px;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+footer{
+  padding: 5px;
+}
+
+footer .footer-item a{
+  text-decoration: none;
+  color: black;
+}
+.copyright{
+  position: absolute;
+  left: 50%;
+}
+.bi{
+  padding: 0px;
+}
+.contact-page button{
+  border: none;
+  color: black;
+  background-color: crimson;
+  border-radius: 4px;
+}
+
+</style>
+</head>   
+<body> 
+    <!--navigation-->   
+    <div class="container-fluid">
+		<div class="navbar navbar-brand">
+            <ul class="row d-flex">
+                <li class="col"><a href="home.html">Home</a></li>
+                <li class="col"><a href="contact.html">Contact</a></li>
+                <li class="col"><a href="login.html"> Log In</a></li>
+                <li class="col"><a href="about.html">About Us</a></li>
+            </ul>	
+		</div>
+    </div class="fixed-top">    
+        <h1 style="text-align:center">Kezzy's Delicacies</h1>
+        <!--menu items-->
+        <div class="container menu">
+            <div class="row justify-content-center">
+                <div class="col">
+                <div class="row justify-content-center">
+                    <div class="card col-md-4" style="width: 18rem;">
+                        <img src="https://thecozycook.com/wp-content/uploads/2018/10/Homemade-French-Fry-Recipe-.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p>French Fries</p> 
+                            <a href="order.html">Order</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-4" style="width: 18rem;">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=714&q=80" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p>Pizza</p> 
+                            <a href="order.html">Order</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-4" style="width: 18rem;">
+                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=714&q=80" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p>Pancakes</p>
+                            <a href="order.html">Order</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-4" style="width: 18rem;">
+                        <img src="https://www.thespruceeats.com/thmb/qWxT_QU0PlqphVPfgMtfQjSKPO0=/1867x1867/smart/filters:no_upscale()/chicken-shawarma-138740297-58260f943df78c6f6acabb5b.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p>Shawarma</p> 
+                            <a href="order.html">Order</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-4" style="width: 18rem;">
+                        <img src="https://i1.wp.com/www.potentash.com/wp-content/uploads/2020/06/beef-pilau.jpg?fit=640%2C640&ssl=1" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p>Beef Pilau</p> 
+                            <a href="order.html">Order</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-4" style="width: 18rem;">
+                        <img src="https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p>Salad</p> 
+                            <a href="order.html">Order</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-4" style="width: 18rem;">
+                        <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=897&q=80" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p>Pasta</p> 
+                            <a href="order.html">Order</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-4" style="width: 18rem;">
+                        <img src="https://images.unsplash.com/photo-1503481766315-7a586b20f66d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80" class="card-img-top" alt="" height="290">
+                        <div class="card-body">
+                            <p>Coffee</p> 
+                            <a href="order.html">Order</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-4" style="width: 18rem;">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=902&q=80" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p>Burger</p> 
+                            <a href="order.html">Order</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-4" style="width: 18rem;">
+                        <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=663&q=80" class="card-img-top" alt="" height="435">
+                        <div class="card-body">
+                            <p>Tea</p>
+                            <a href="order.html">Order</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-4" style="width: 18rem;">
+                        <img src="https://images.unsplash.com/photo-1550586554-a5a846e56593?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p>Crabs</p>  
+                            <a href="order.html">Order</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-4" style="width: 18rem;">
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzF8fGZvb2R8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p>Strawberry Cake</p> 
+                            <a href="order.html">Order</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-4" style="width: 18rem;">
+                        <img src="https://images.unsplash.com/photo-1494597706938-de2cd7341979?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1080&q=80" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p>Omelette</p> 
+                            <a href="order.html">Order</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-4" style="width: 18rem;">
+                        <img src="https://images.unsplash.com/photo-1514944288352-fffac99f0bdf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p>Prawns</p> 
+                            <a href="order.html">Order</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-4" style="width: 18rem;">
+                        <img src="https://images.unsplash.com/photo-1599043513900-ed6fe01d3833?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTV8fGJpcnlhbml8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p>Biryani</p> 
+                            <a href="order.html">Order</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-4" style="width: 18rem;">
+                        <img src="https://images.unsplash.com/photo-1546941221-39e8691f9496?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p>White Wine</p> 
+                            <a href="order.html">Order</a>
+                        </div>
+                    </div> 
+                    <div class="card col-md-4" style="width: 18rem;">
+                        <img src="https://images.unsplash.com/photo-1422748733255-ee572fddeab0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p>Red Wine</p> 
+                            <a href="order.html">Order</a>
+                        </div>
+                    </div>    
+                    <div class="card col-md-4" style="width: 18rem;">
+                        <img src="https://images.unsplash.com/photo-1570900555854-2ca419a816ba?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDl8fHdoaXNrZXl8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p>Whiskey</p> 
+                            <a href="order.html">Order</a>
+                        </div>
+                    </div>   
+                    <div class="card col-md-4" style="width: 18rem;">
+                        <img src="https://images.unsplash.com/photo-1601925088924-aad72e86b894?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <p>Juice Cocktails</p> 
+                            <a href="order.html">Order</a>
+                        </div>
+                    </div>    
+                        <div class="card col-md-4" style="width: 18rem;">
+                            <img src="https://images.unsplash.com/photo-1602748641342-97cd52740df0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <p>Cocktails</p> 
+                                <a href="order.html">Order</a>
+                            </div>
+                        </div>    
+                            <div class="card col-md-4" style="width: 18rem;">
+                                <img src="https://images.unsplash.com/photo-1613987881497-df44241cb6b0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" class="card-img-top" alt="">
+                                <div class="card-body">
+                                    <p>Cocktails</p> 
+                                    <a href="order.html">Order</a>
+                                </div> 
+                            </div> 
+                        </div>          
+                </div>
+        </div>
+        <footer class="fixed-bottom">      
+        <div class="d-flex">
+             <div class="col">
+                <a href="https://instagram.com">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://twitter.com">
+                    <i class="bi bi-twitter"></i>
+                </a>
+            </div >
+            <div class="col">
+                <a href="https://facebook.com">
+                    <i class="bi bi-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--copyright-->
+<div class="row copyright">
+    &copy; 2021
+</div>
+</footer>       
+   <!-- Latest compiled JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
