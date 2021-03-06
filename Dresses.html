@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!--icons-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!--css styles-->
+<link rel="stylesheet" href="styles.css">
+<title>Fashion Fix</title>
+</head>
+	<body>
+		<div class="container-fluid">
+			<!--offers-->
+			<div id="headingoffers" class="carousel slide" data-bs-ride="carousel">
+  				<div class="carousel-inner">
+	  				<div class="row">
+		  				<!--<div class="col-6 col-md-4 ">-->
+    					<div class="carousel-item active text-align--centre">
+							<div>
+								<h6> sale offer upto 30% off on skirts</h6>
+							</div>
+    					</div>
+						<div class="carousel-item text-align--centre">
+							<div>
+								<h6>Free shipping on heels</h6>
+							</div>
+						</div>
+						<div class="carousel-item text-align--centre">
+							<div>
+								<h6>Buy from the special set to get a free gift</h6>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#headingoffers"  data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<!--<span class="visually-hidden">Previous</span>-->
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#headingoffers"  data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<!--<span class="visually-hidden">Next</span>-->
+						</button>
+						<!--end of offers-->
+					</div>
+				</div>	
+	  		</div>
+		</div>	  
+	<div class="container btn">
+		<div class="row">
+			<div class="col-md-9 align-content-end" id="brandname">
+				<a href="homepage.html">
+					<h2> FASHION FIX</h2>
+				</a>	
+			</div>
+		<div class="row">
+			
+				 <div class="col-4">
+						<!--Modal: Login / Register Form-->
+<div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog cascading-modal" role="document">
+	  <!--Content-->
+	  <div class="modal-content">
+  
+		<!--Modal cascading tabs-->
+		<div class="modal-c-tabs">
+  
+		  <!-- Nav tabs -->
+		  <ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+			<li class="nav-item">
+			  <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i class="bi bi-person-fill"></i>
+				Login</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i class="bi bi-person-plus-fill"></i>
+				Register</a>
+			</li>
+		  </ul>
+  
+		  <!-- Tab panels -->
+		  <div class="tab-content">
+			<!--Panel 7-->
+			<div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+  
+			  <!--Body-->
+			  <div class="modal-body mb-1">
+				<div class="md-form form-sm mb-5">
+					<i class="bi bi-envelope-fill"></i>
+				  <input type="email" id="modalLRInput10" class="form-control form-control-sm validate">
+				  <label data-error="wrong" data-success="right" for="modalLRInput10">Your email</label>
+				</div>
+  
+				<div class="md-form form-sm mb-4">
+					<i class="bi bi-lock-fill"></i>
+				  <input type="password" id="modalLRInput11" class="form-control form-control-sm validate">
+				  <label data-error="wrong" data-success="right" for="modalLRInput11">Your password</label>
+				</div>
+				<div class="text-center mt-2">
+				  <button class="btn btn-info">Log in <i class="bi bi-sign-in ml-1"></i></button>
+				</div>
+			  </div>
+			  <!--Footer-->
+			  <div class="modal-footer">
+				<div class="options text-center text-md-right mt-1">
+				  <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+				  <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+				</div>
+				<button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+			  </div>
+  
+			</div>
+			<!--/.Panel 7-->
+  
+			<!--Panel 8-->
+			<div class="tab-pane fade" id="panel8" role="tabpanel">
+  
+			  <!--Body-->
+			  <div class="modal-body">
+				<div class="md-form form-sm mb-5">
+				  <i class="bi bi-envelope prefix"></i>
+				  <input type="email" id="modalLRInput12" class="form-control form-control-sm validate">
+				  <label data-error="wrong" data-success="right" for="modalLRInput12">Your email</label>
+				</div>
+  
+				<div class="md-form form-sm mb-5">
+				  <i class="bi bi-lock prefix"></i>
+				  <input type="password" id="modalLRInput13" class="form-control form-control-sm validate">
+				  <label data-error="wrong" data-success="right" for="modalLRInput13">Your password</label>
+				</div>
+  
+				<div class="md-form form-sm mb-4">
+				  <i class="bi bi-lock prefix"></i>
+				  <input type="password" id="modalLRInput14" class="form-control form-control-sm validate">
+				  <label data-error="wrong" data-success="right" for="modalLRInput14">Repeat password</label>
+				</div>
+  
+				<div class="text-center form-sm mt-2">
+				  <button class="btn btn-info">Sign up <i class="bi bi-sign-in ml-1"></i></button>
+				</div>
+  
+			  </div>
+			  <!--Footer-->
+			  <div class="modal-footer">
+				<div class="options text-right">
+				  <p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+				</div>
+				<button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+			<!--/.Panel 8-->
+		  </div>
+  
+		</div>
+	  </div>
+	  <!--/.Content-->
+	</div>
+  </div>
+				<!--Modal: Login / Register Form-->
+				<div class="text-center">
+					<a href="" class="btn btn-default btn-rounded my-3" data-toggle="modal" data-target="#modalLRForm">
+						<i class="bi bi-person-fill"></i>
+					</a>
+				</div>
+				</div>
+						<div class="col-md-4">
+						<a href="Wishlist.html">
+							<span>
+							<i class="bi bi-heart"></i>
+							</span> 
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="shoppingCart.html">
+							<span>
+								<i class="bi bi-cart3"></i>
+							</span>
+						</a>
+					</div>
+				
+				</div>
+			</div>
+	</div>
+	
+	<!--	</div>-->
+	<!--navigation-->
+		<div class="dropdown-menu">
+		  <button type="button" class="btn">Reference</button>
+		</div>  
+	</div>
+	<nav class="navbar navbar-expand-lg d-flex">
+		<div class="container-fluid">
+				<div class="d-flex">
+					<div class="dropdown">
+					  <button type="button" class="btn btn-lg drop-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-women="10,20">
+						Women
+					</button>
+					  <ul class="dropdown-menu" aria-labelledby="dropdownMenuMen">
+						<li><a class="dropdown-item" href="Accessories.html">Accessories</a></li>
+						<li><a class="dropdown-item" href="Jeans.html">Jeans</a></li>
+						<li><a class="dropdown-item" href="Blousers.html">Blousers</a></li>
+						<li><a class="dropdown-item" href="Bras.html">Bras</a></li>
+						<li><a class="dropdown-item" href="Shoes.html">Shoes</a></li>
+						<li><a class="dropdown-item" href="Swimsuits.html">Swimsuits</a></li>
+						<li><a class="dropdown-item" href="Dresses.html">Dresses</a></li>
+						<li><a class="dropdown-item" href="Skirts.html">Skirts</a></li>
+						<li><a class="dropdown-item" href="Shorts.html">Shorts</a></li>
+						<li><a class="dropdown-item" href="Underwear.html">Underwear</a></li>
+					  </ul>
+					
+					</div>
+			  <div class="dropdown me-1">
+				<button type="button" class="btn btn-lg drop-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-women="10,20">
+				  Men
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenuWomen">
+					<li><a class="dropdown-item" href="Caps.html">Caps</a></li>
+					<li><a class="dropdown-item" href="Jeansmen.html">Jeans</a></li>
+					<li><a class="dropdown-item" href="Khakis.html">Khakis</a></li>
+					<li><a class="dropdown-item" href="Blazers.html">Blazers</a></li>
+					<li><a class="dropdown-item" href="Vests.html">Vests</a></li>
+					<li><a class="dropdown-item" href="Shirts.html">Shirts</a></li>
+					<li><a class="dropdown-item" href="Shoes.html">Shoes</a></li>
+					<li><a class="dropdown-item" href="Socks.html">Socks</a></li>
+					<li><a class="dropdown-item" href="Belts.">Belts</a></li>
+				</ul>
+			
+			  </div>
+			  <div class="dropdown me-1">
+				<button type="button" class="btn btn-lg drop-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-women="10,20">
+				  Kids
+				  
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenuKids">
+				  <li><a class="dropdown-item" href="Boys.html">Boys</a></li>
+				  <li><a class="dropdown-item" href="Girls.html">Girl</a></li>
+				</ul>
+			
+			  </div>		
+			  <button type="button" class="btn btn-lg"> Sales</button>
+			  <div id="searchform">
+			<form class="d-flex">
+			  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+			  <button class="btn btn-outline-success" type="submit">Search</button>
+			</form>
+			  </div>
+		  </div>
+		</div>
+	  </nav> 
+	<!--end of navigation-->
+	<!-- cards-->
+  <div class="container">
+    <div class="row justify-content-center">
+        <div class="card col-md-4" style="width: 18rem;">
+            <a target="_parent" href="#">
+                <img src="https://images.unsplash.com/photo-1612336307429-8a898d10e223?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NDB8fGNsb3RoaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="">
+            </a>
+                <div class="card-body">
+                <p>Cute boyfriend shoes</p> 
+            </div>
+          </div>
+          <div class="card col-md-4" style="width: 18rem;">
+            <a target="_parent" href="#">
+                <img src="https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=674&q=80" class="card-img-top" alt="">
+            </a>
+                <div class="card-body">
+                <p>Cute boyfriend shoes</p> 
+            </div>
+          </div>
+          <div class="card col-md-4" style="width: 18rem;">
+            <a target="_parent" href="#">
+                <img src="https://images.unsplash.com/photo-1572804013427-4d7ca7268217?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80" class="card-img-top" alt="">
+            </a>
+                <div class="card-body">
+                <p>Cute boyfriend shoes</p> 
+            </div>
+          </div>
+          <div class="card col-md-4" style="width: 18rem;">
+            <a target="_parent" href="#">
+                <img src="https://images.unsplash.com/photo-1602414448057-e4357463cb3a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" class="card-img-top" alt="">
+            </a>
+                <div class="card-body">
+                <p>Cute boyfriend shoes</p> 
+            </div>
+          </div>
+          <div class="card col-md-4" style="width: 18rem;">
+            <a target="_parent" href="#">
+                <img src="https://images.unsplash.com/photo-1589810635657-232948472d98?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="">
+            </a>
+                <div class="card-body">
+                <p>Cute boyfriend shoes</p> 
+            </div>
+          </div>
+          <div class="card col-md-4" style="width: 18rem;">
+            <a target="_parent" href="#">
+                <img src="https://images.unsplash.com/photo-1499013819532-e4ff41b00669?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="">
+            </a>
+                <div class="card-body">
+                <p>Cute boyfriend shoes</p> 
+            </div>
+          </div>
+          <div class="card col-md-4" style="width: 18rem;">
+            <a target="_parent" href="#">
+                <img src="https://images.unsplash.com/photo-1499013819532-e4ff41b00669?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="">
+            </a>
+                <div class="card-body">
+                <p>Cute boyfriend shoes</p> 
+            </div>
+          </div>
+          <div class="card col-md-4" style="width: 18rem;">
+            <a target="_parent" href="#">
+                <img src="https://images.unsplash.com/photo-1499013819532-e4ff41b00669?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="">
+            </a>
+                <div class="card-body">
+                <p>Cute boyfriend shoes</p> 
+            </div>
+          </div>
+          <div class="card col-md-4" style="width: 18rem;">
+            <a target="_parent" href="#">
+                <img src="https://images.unsplash.com/photo-1499013819532-e4ff41b00669?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="">
+            </a>
+                <div class="card-body">
+                <p>Cute boyfriend shoes</p> 
+            </div>
+          </div>
+          <div class="card col-md-4" style="width: 18rem;">
+            <a target="_parent" href="#">
+                <img src="https://images.unsplash.com/photo-1499013819532-e4ff41b00669?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="">
+            </a>
+                <div class="card-body">
+                <p>Cute boyfriend shoes</p> 
+            </div>
+          </div>
+    </div>
+  </div>      
+         <!--end of card--> 
+         
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    </body>
+</html>
