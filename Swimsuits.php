@@ -14,7 +14,7 @@ require 'header.php';
 require_once 'dbConnect.php';
 
 
-$sql = 'SELECT * FROM product_details_men WHERE category = "swimsuits" AND gender ="Women"';
+$sql = 'SELECT * FROM product_details WHERE category = "swimsuits" AND gender ="Women"';
 
 	$results = mysqli_query( $conn, $sql );
 
@@ -35,9 +35,9 @@ if ( $results ) {
 				  <h5 class="card-title">' . $women_swimsuit['productName'] . '</h5>
 				  <p class="card-text">' . $women_swimsuit['description'] . '</p>
 				  <p class="card-text">Ksh. ' . $women_swimsuit['price'] . '/=</p>
-				  <a href="shoppingCart.php?id='.$product_id.'" class="btn">Add to Cart</a>
-				  <a href="Wishlist.php?id='.$product_id.'" class="btn">Wishlist</a>
-				  <a href="placeorder.php" class="btn">Order now</a>
+				  <a href="shoppingCart.php?id='.$product_id.'" class="btn btn-outline-secondary">Add to Cart</a>
+				  <a href="Wishlist.php?id='.$product_id.'" class="btn btn-outline-secondary">Wishlist</a>
+				  <a href="placeorder.php" class="btn btn-outline-secondary">Order now</a>
 				</div>
 			  </div>';
 

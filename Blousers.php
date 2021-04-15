@@ -48,22 +48,18 @@ if ( $results ) {
 				$product_id = $women_tops['unique_id'];
 				$img        = $women_tops['image'];
 
-				echo '<div class="container">
-				<div class="row justify-content-center">
-				<div class="card col-md-4" style="width: 18rem;">
+
+				echo '<div class="card col-md-4" style="width: 18rem;">
 				<img src="images/' . $img .'.jfif" class="card-img-top" alt="...">
 				<div class="card-body">
 				  <h5 class="card-title">' . $women_tops['productName'] . '</h5>
 				  <p class="card-text">' . $women_tops['description'] . '</p>
 				  <p class="card-text">Ksh. ' . $women_tops['price'] . '/=</p>
-				  <a href="shoppingCart.php?id=' . $product_id . '" class="btn">Add to Cart</a>
-				  <a href="Wishlist.php?id=' . $product_id . '" class="btn">Wishlist</a>
-				  <a href="placeorder.php" class="btn">Order now</a>
+				  <a href="shoppingCart.php?id='.$product_id.'" class="btn btn-outline-secondary">Add to Cart</a>
+				  <a href="wishlist.php?id='.$product_id.'" class="btn btn-outline-secondary">Add to wishlist</a>
+				  <a href="placeorder.php" class="btn btn-outline-secondary">Order now</a>
 				</div>
-			  </div>
-			  </div>
-			  </div>
-			  ';
+			  </div>';
 
 			}
 			echo '	</div>

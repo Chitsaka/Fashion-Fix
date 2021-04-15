@@ -247,7 +247,6 @@ $sql = "SELECT * FROM customer_info WHERE unique_id = $user_id";
 															<i class="bi bi-person-fill"></i>
 						</a>
 						<?php endif ?>
-<!--end  of modal-->
 </div>
 <!--end of container-->
 <!--navigation-->

@@ -24,12 +24,14 @@
 <style>
 .container.shop{
     border: 1px grey solid;
+    border-radius: 20px ;
 }
+p {text-align: center;}
 </style>
     <title>Fashion-Fix | Open a Shop</title>
 </head>
 <body>
-<p class="form-title" style="align:center;">Fill in the store information</p>
+<p class="form-title" >Fill in the store information</p>
 <div class="container justify-content-around shop" style="margin-top:20px;">
     <form id="shop_info" class="row g-3" method="post" action ="sellersection.php" enctype="multipart/form-data">
         <dl class="col-md-4">
@@ -128,16 +130,19 @@
             </div>
 
 </div>
+<br>
 <!--bank info-->
-<p class="f18 c42 mt40 mb20">Settlement account information</p>
-<div class="container shop " style="margin: 30px;">
+    <div class="align-content-center" >
+    <p class="form-title">Settlement account information</p>
+    </div>
+<div class="container justify-content-around shop" style="margin-top:20px;">
             <input type="hidden" id="payTypeID" name="payment_type" value="1">
 
             <div class="bankpay-box-info">
-                <dl class="row mb-3">
-                    <dt class="col-sm-2 col-form-label"><b >*</b>Bank Account Name</dt>
+                <dl class="col-7">
+                    <dt class=" col-form-label"><b >*</b>Bank Account Name</dt>
                     <dd>
-                        <span class="col-sm-10">
+                        <span class="">
                             <input name="bank_account_name"
                                    value="" type="text"
                                    class="form-control form-control-sm validate" placeholder="Please enter your bank card name">
@@ -145,29 +150,29 @@
                     </dd>
                 </dl>
 
-                <dl class="row mb-3">
-                    <dt class="col-sm-2 col-form-label"><b>*</b>Account Number</dt>
+                <dl class="col-7">
+                    <dt class=" col-form-label"><b>*</b>Account Number</dt>
                     <dd>
-                        <span class="col-sm-10">
+                        <span class="">
                             <input name="bank_account_number"
                                    value="" type="text"
                                    class="form-control form-control-sm validate" placeholder="Enter the Account Number.">
                         </span>
                     </dd>
                 </dl>
-                <dl class="row mb-3">
-                    <dt class="col-sm-2 col-form-label"><b>*</b>Bank Name</dt>
+                <dl class="col-7">
+                    <dt class=" col-form-label"><b>*</b>Bank Name</dt>
                     <dd>
-                        <span class="col-sm-10">
+                        <span class="">
                             <input name="bank_name" value="" type="text"
                                    class="form-control form-control-sm validate" placeholder="Enter the Bank Name.">
                         </span>
                     </dd>
                 </dl>
-                <dl class="row mb-3">
-                    <dt class="col-sm-2 col-form-label"><b>*</b>Branch Bank Name</dt>
+                <dl class="col-7">
+                    <dt class=" col-form-label"><b>*</b>Branch Bank Name</dt>
                     <dd>
-                        <span class="col-sm-10">
+                        <span class="">
                             <input name="bank_branch_name" value=""
                                    type="text" class="form-control form-control-sm validate "
                                    placeholder="Enter the Branch Bank Name">
@@ -175,12 +180,12 @@
                     </dd>
                 </dl>
                   </div>
-                  <div style="margin: 30px;">
-            <p class="f18 c42 mt40 mb20" >Store Management Information</p>
-            <dl class="row mb-3" >
-                <dt class="col-sm-2 col-form-label"><b class="">*</b>Store Name</dt>
+                  <div class="col-7">
+            <label class="f18 c42 mt40 mb20" >Store Management Information</label>
+            <dl class="col-7" >
+                <dt class=" col-form-label"><b class="">*</b>Store Name</dt>
                 <dd>
-                    <span class="col-sm-10">
+                    <span class="">
                         <input name="store_name" id="store_name" value=""
                                type="text" class="form-control form-control-sm validate" placeholder="Store name can not be modified.">
                     </span>

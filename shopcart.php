@@ -47,7 +47,7 @@ INNER JOIN product_details ON checkout.post_id = product_details.unique_id
 WHERE checkout.unique_id = $user_id";
 
 
-$result = $conn->query( $sql );
+/*$result = $conn->query( $sql );
 
 if ( $result-> num_rows > 0 ) {
 
@@ -64,22 +64,54 @@ if ( $result-> num_rows > 0 ) {
 		  <a href="shoppingCart.php?id='.$user_id.'" class="btn btn-outline-secondary">Add to Cart</a>
 		  <a href="placeorder.phpid='.$user_id.'" class="btn btn-outline-secondary">Order now</a>
 		</div>
-		<div class="def-number-input number-input safari_only mb-0 w-100">
-	<button onclick="this.parentNode.querySelector("input[type=number]").stepDown()"
-	  class="minus"></button>
-	<input class="quantity" min="0" name="quantity" value="1" type="number">
-	<button onclick="this.parentNode.querySelector("input[type=number]").stepUp()"
-	  class="plus"></button>
-  </div>
 	  </div>';
 
     }
 	echo '';
 }
 else {
-	echo $conn->error;
+	echo mysqli_error($conn);
 	 echo "0 results";
-   }
+   } */
+
+
+$result = $conn->query( $sql );
+
+if ( $result-> num_rows > 0 ) {
+  // output data of each row
+	echo '<div class= "container">
+	<div class="row justify-content-center">';
+
+    while( $row = $result->fetch_assoc() ) {
+	  $img = $row ['image'];
+	  echo' <div class="card col-md-4" style="width: 18rem;">
+	  <img src="images/' . $img .'.jfif" class="card-img-top" alt="...">
+	  <div class="card-body">
+		<h5 class="card-title">' . $row['productName'] . '</h5>
+		<p class="card-text">' . $row['description'] . '</p>
+		<p class="card-text">' . $row['price'] . '</p>
+		<div>
+							<i class="fa fa-star fa-sm text-primary"></i>
+
+							<i class="fa fa-star fa-sm text-primary"></i>
+
+							<i class="fa fa-star fa-sm text-primary"></i>
+
+							<i class="fa fa-star fa-sm text-primary"></i>
+
+							<i class="fa fa-star fa-sm text-primary"></i>
+							</div>
+		<a href="shoppingCart.php?id='.$user_id.'" class="btn btn-outline-secondary">Add to Cart</a>
+		<a href="placeorder.phpid='.$user_id.'" class="btn btn-outline-secondary">Order now</a>
+	  </div>
+	</div>';
+  	}
+echo  '</div>
+		</div>';
+} else {
+ echo $conn->error;
+  echo '0 results';
+}
 
 ?>
 <!--Section: Block Content-->

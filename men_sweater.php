@@ -14,7 +14,7 @@ require 'header.php';
 require_once 'dbConnect.php';
 
 
-$sql = 'SELECT * FROM product_details WHERE category = "sweaters" AND gender ="Men"';
+$sql = 'SELECT * FROM product_details WHERE category = "Sweater" AND gender ="Men"';
 
 	$results = mysqli_query( $conn, $sql );
 
@@ -48,7 +48,7 @@ if ( $results ) {
 			';
 	} else {
 		// Code...
-			echo 'No products available';
+		echo '<strong> COMING SOON </strong>';
 
 	}
 } else {

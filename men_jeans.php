@@ -48,7 +48,7 @@ if ( $results ) {
 			';
 	} else {
 		# code...
-			echo 'No products available';
+			echo '<strong> COMING SOON </strong>';
 
 	}
 

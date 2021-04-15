@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Fashion Fix | men | Shoes</title>
+</head>
+<body>
 <?php
 require 'header.php';
 
@@ -49,113 +59,11 @@ if ( $results ) {
 
 	?>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
 </div>
 </div>
-	<!-- cards-->
 
-<section>
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="card col-md-4" style="width: 18rem;">
-				<a target="_parent" href="#">
-					<img src="https://images.unsplash.com/photo-1556048219-bb6978360b84?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80" class="card-img-top" alt="">
-				</a>
-					<div class="card-body">
-					<p>Cute boyfriend shoes</p>
-				</div>
-			</div>
-			<div class="card col-md-4" style="width: 18rem;">
-				<a target="_parent" href="#">
-					<img src="https://images.unsplash.com/photo-1586295470933-7cca2e0e3fa0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="card-img-top" alt="">
-				</a>
-					<div class="card-body">
-					<p>Cute boyfriend shoes</p>
-				</div>
-			</div>
-			<div class="card col-md-4" style="width: 18rem;">
-				<a target="_parent" href="#">
-					<img src="https://images.unsplash.com/photo-1595341888016-a392ef81b7de?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1058&q=80" class="card-img-top" alt="">
-				</a>
-					<div class="card-body">
-					<p>Cute boyfriend shoes</p>
-				</div>
-			</div>
-			<div class="card col-md-4" style="width: 18rem;">
-				<a target="_parent" href="#">
-					<img src="https://images.unsplash.com/photo-1587502374301-1c46349e3608?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="card-img-top" alt="">
-				</a>
-					<div class="card-body">
-					<p>Cute boyfriend shoes</p>
-				</div>
-			</div>
-			<div class="card col-md-4" style="width: 18rem;">
-				<a target="_parent" href="#">
-					<img src="https://images.unsplash.com/photo-1555274175-6cbf6f3b137b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80" class="card-img-top" alt="">
-				</a>
-					<div class="card-body">
-					<p>Cute boyfriend shoes</p>
-				</div>
-			</div>
-			<div class="card col-md-4" style="width: 18rem;">
-				<a target="_parent" href="#">
-					<img src="https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80" class="card-img-top" alt="">
-				</a>
-					<div class="card-body">
-					<p>Cute boyfriend shoes</p>
-				</div>
-			</div><div class="card col-md-4" style="width: 18rem;">
-				<a target="_parent" href="#">
-					<img src="https://images.unsplash.com/photo-1555100343-9f07be62f564?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" class="card-img-top" alt="">
-				</a>
-					<div class="card-body">
-					<p>Cute boyfriend shoes</p>
-				</div>
-			</div>
-			<div class="card col-md-4" style="width: 18rem;">
-				<a target="_parent" href="#">
-					<img src="https://images.unsplash.com/photo-1578116922645-3976907a7671?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1051&q=80" class="card-img-top" alt="">
-				</a>
-					<div class="card-body">
-					<p>Cute boyfriend shoes</p>
-				</div>
-			</div>
-			<div class="card col-md-4" style="width: 18rem;">
-				<a target="_parent" href="#">
-					<img src="https://images.unsplash.com/photo-1591394579434-6510605a5590?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OTB8fGNsb3RoaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="">
-				</a>
-					<div class="card-body">
-					<p>Cute boyfriend shoes</p>
-				</div>
-			</div>
-			<div class="card col-md-4" style="width: 18rem;">
-				<a target="_parent" href="#">
-					<img src="https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8ODR8fGNsb3RoaW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="">
-				</a>
-					<div class="card-body">
-					<p>Cute boyfriend shoes</p>
-				</div>
-			</div>
-			<div class="card col-md-4" style="width: 18rem;">
-				<a target="_parent" href="#">
-					<img src="https://images.unsplash.com/photo-1553610851-294a26d51514?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1008&q=80" class="card-img-top" alt="">
-				</a>
-					<div class="card-body">
-					<p>Cute boyfriend shoes</p>
-				</div>
-			</div>
-			<div class="card col-md-4" style="width: 18rem;">
-				<a target="_parent" href="#">
-					<img src="https://images.unsplash.com/photo-1599392120243-c9f453489a9c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=976&q=80" class="card-img-top" alt="">
-				</a>
-					<div class="card-body">
-					<p>Cute boyfriend shoes</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-		 <!--end of card-->
+
+
 	</body>
 </html>
