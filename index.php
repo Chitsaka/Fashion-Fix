@@ -27,4 +27,7 @@
 	<!--end of slider-->
 	<!-- JavaScript Bundle with Popper -->
 </body>
+<?php
+include 'footer.php';
+?>
 </html>

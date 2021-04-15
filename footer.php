@@ -24,7 +24,7 @@
 				<div class="col-md-3">
 					<h6>Company info</h6>
 					<div class="col">
-						<a href="about.html">About Us</a>
+						<a href="about.php">About Us</a>
 					</div>
 					<div class="col">
 						<a href="">Site Map</a>
@@ -36,22 +36,22 @@
 						<h6>Help</h6>
 					</div>
 					<div class="col">
-						<a href="contact.html">Contact Us</a>
+						<a href="contact.php">Contact Us</a>
 					</div>
 					<div class="col">
-						<a href="Ordertrack.html">Order Tracking</a>
+						<a href="Ordertrack.php">Order Tracking</a>
 					</div>
 					<div class="col">
-						<a href="Shippinginfo.html">Shipping Information</a>
+						<a href="Shippinginfo.pp">Shipping Information</a>
 					</div>
 					<div class="col">
-						<a href="FAQ.html">FAQs</a>
+						<a href="FAQ.php">FAQs</a>
 					</div>
 				</div>
 				<!--third column-->
 				<div class="col-md-3">
 					<h6>Quick Links</h6>
-					<a href="Sale.html">Special offers</a>
+					<a href="Sale.php">Special offers</a>
 				</div>
 				<!--fourth column-->
 				<div class="col-md-3">

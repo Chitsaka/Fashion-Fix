@@ -10,7 +10,7 @@ body {
 	font-family: sans-serif;
 	margin: 0;
 	padding: 0;
-	background: #aa5b5b;
+	/*background: #fcd5d5;*/
 }
 
 
@@ -110,10 +110,7 @@ li {
 	background-color: #e7bcbc;
 	color: #222222;
 }
-modal.nav-tabs.modal-body {
-	height: 450px;
-	overflow-y: auto;
-}
+
 #searchform{
 		position: absolute;
 		left: 80%;
@@ -147,7 +144,7 @@ modal.nav-tabs.modal-body {
 				}
 				.card-title{
 						text-align: center;
-						color:bisque;
+						color:rgb(209, 91, 101);
 				}
 
 				.card{

@@ -359,3 +359,5 @@ function verifyPassword() {
 	}
 }
 </script>
+</body>
+</html>
