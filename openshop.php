@@ -24,14 +24,14 @@
     <title>Document</title>
 </head>
 <body>
-<div class="container">
+<div class="container justify-content-around">
 <p class="form-title">Fill in the store information</p>
     <form id="shop_info" class="row g-3" method="post" action ="sellersection.php" enctype="multipart/form-data">
         <dl class="col-md-4">
             <dt><b class="">*</b>Email</dt>
                 <dd>
                     <span class="ctrl-item">
-                        <input type="text" class="w-270 h-46" name="email" id="email"
+                        <input type="text" class="form-control form-control-sm validate" name="email" id="email"
                                placeholder="Enter your email">
                         <div class="ctrl-tip error"></div>
                     </span>
@@ -41,27 +41,27 @@
             <dt><b class="v2-red-require">*</b>Password</dt>
                 <dd>
                    <span class="ctrl-item">
-                        <input type="password" class="w270 h46" name="password" id="oldPwdID"
+                        <input type="password" class="form-control form-control-sm validate" name="password" id="oldPwdID"
                                placeholder="Enter the Password">
                         <span class="ctrl-tip error"></span>
                     </span>
                  </dd>
         </dl>
                 <dl class="col-md-4">
-                    <dt><b class="v2-red-require">*</b>Confirm Password</dt>
+                    <dt><b>*</b>Confirm Password</dt>
                     <dd>
                     <span class="ctrl-item">
-                        <input type="password" class="w270 h46" name="password_confirmation"
+                        <input type="password" class="form-control form-control-sm validate" name="password_confirmation"
                                placeholder="Enter your Password">
                         <span class="ctrl-tip error"></span>
                     </span>
                     </dd>
                 </dl>
                 <dl class="col-md-5">
-                <dt><b class="v2-red-require">*</b>First Name</dt>
+                <dt><b >*</b>First Name</dt>
                 <dd>
                     <span class="ctrl-item">
-                        <input type="text" class="w270 h46" value=""
+                        <input type="text" class="form-control form-control-sm validate" value=""
                                name="FirstName" placeholder="Enter your First Name">
                         <span class="ctrl-tip error"></span>
                     </span>
@@ -69,40 +69,38 @@
                 </dd>
             </dl>
             <dl class="col-md-5">
-                <dt><b class="v2-red-require">*</b>Last Name</dt>
+                <dt><b >*</b>Last Name</dt>
                 <dd>
                     <span class="ctrl-item">
-                        <input type="text" class="w270 h46" value=""
+                        <input type="text" class="form-control form-control-sm validate" value=""
                                name="LastName" placeholder="Enter your Last Name">
                         <span class="ctrl-tip error"></span>
                     </span>
 
                 </dd>
             </dl>
-                <dl class="col-md-6" style="float:left;">
-                <dt><b class="v2-red-require">*</b>Mobile phone</dt>
+                <dl class="col-7">
+                <dt><b >*</b>Mobile phone</dt>
                 <dd>
                     <span class="ctrl-item">
 
-                        <select name="country_code" id="country_code" class="col-md-2" onchange="ChangeArea()">
+                        <select name="country_code" id="country_code" class="col-md-2">
                             <option value="254" selected>+254</option>
                             <option value="256" >+256</option>
                             <option value="234" >+234</option>
                         </select>
-                        <input name="phonenumber" id="phone" type="text" class="col-md-4"
+                        <input name="phonenumber" id="phone" type="text" class="form-control form-control-sm validate col-6"
                                 placeholder="e.g. 700200100" >
-                        <span class="ctrl-tip  ctrl-tip-inline error" style="display: block"></span>
                     </span>
                 </dd>
             </dl>
 
-                        <dl class="ctrl-cf"></dl>
-            <div  class="col-12">
-                <dl class="ctrl-box mr100">
+            <div  class="col-7">
+                <dl class="">
                     <dt><b class="v2-red-require">*</b>ID Card Number</dt>
                     <dd>
-                        <span class="ctrl-item">
-                            <input type="text" class="w680 h46" value=""
+                        <span class="">
+                            <input type="text" class="form-control form-control-sm validate" value=""
                                    name="idno" placeholder="Enter the ID card number">
                             <span class="ctrl-tip ctrl-tip-inline error"></span>
                         </span>
@@ -110,12 +108,12 @@
                     </dd>
                 </dl>
             </div>
-            <div  class="company-box-info">
-                <dl class="col-12">
-                    <dt><b class="v2-red-require">*</b>Company name</dt>
+            <div  class="col-7 company-box-info">
+                <dl class="">
+                    <dt><b class="">*</b>Company name</dt>
                     <dd>
-                        <span class="ctrl-item">
-                            <input type="text" class="w680 h46" value=""
+                        <span class="">
+                            <input type="text" class="form-control form-control-sm validate" value=""
                                    name="company_name" placeholder="Enter the Company name">
                             <span class="ctrl-tip  ctrl-tip-inline error"></span>
                         </span>
@@ -123,73 +121,66 @@
                 </dl>
 
             </div>
-            <dl class="ctrl-cf"></dl>
-</div>
 
-<div class="container wrapper" style="padding-bottom: 30px;">
+</div>
+<!--bank info-->
+<div class=" " style="margin: 30px;">
             <input type="hidden" id="payTypeID" name="payment_type" value="1">
-            <dl class="ctrl-cf"></dl>
             <p class="f18 c42 mt40 mb20">Settlement account information</p>
             <div class="bankpay-box-info">
-                <dl class="ctrl-box ctrl-inline w">
-                    <dt class="lh46 w180"><b class="v2-red-require">*</b>Bank Account Name</dt>
+                <dl class="row mb-3">
+                    <dt class="col-sm-2 col-form-label"><b >*</b>Bank Account Name</dt>
                     <dd>
-                        <span class="ctrl-item">
+                        <span class="col-sm-10">
                             <input name="bank_account_name"
                                    value="" type="text"
-                                   class="w380 h46" placeholder="Enter the Bank Account Name.">
-                            <span class="ctrl-notice">Please enter your bank card name.</span>
-                            <span class="ctrl-tip  ctrl-tip-inline error"></span>
+                                   class="form-control form-control-sm validate" placeholder="Please enter your bank card name">
                         </span>
                     </dd>
                 </dl>
-                <dl class="ctrl-box ctrl-inline w">
-                    <dt class="lh46 w180"><b class="v2-red-require">*</b>Account&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Number</dt>
+
+                <dl class="row mb-3">
+                    <dt class="col-sm-2 col-form-label"><b>*</b>Account Number</dt>
                     <dd>
-                        <span class="ctrl-item">
+                        <span class="col-sm-10">
                             <input name="bank_account_number"
                                    value="" type="text"
-                                   class="w380 h46" placeholder="Enter the Account Number.">
-                            <span class="ctrl-notice">Please enter your bank account number. (e.g.,82090155260000676)</span>
-                            <span class="ctrl-tip  ctrl-tip-inline error"></span>
+                                   class="form-control form-control-sm validate" placeholder="Enter the Account Number.">
                         </span>
                     </dd>
                 </dl>
-                <dl class="ctrl-box ctrl-inline w">
-                    <dt class="lh46 w180"><b class="v2-red-require">*</b>Bank&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name</dt>
+                <dl class="row mb-3">
+                    <dt class="col-sm-2 col-form-label"><b>*</b>Bank Name</dt>
                     <dd>
-                        <span class="ctrl-item">
+                        <span class="col-sm-10">
                             <input name="bank_name" value="" type="text"
-                                   class="w380 h46" placeholder="Enter the Bank Name.">
-                            <span class="ctrl-notice">Please enter the bank name.</span>
-                            <span class="ctrl-tip  ctrl-tip-inline error"></span>
+                                   class="form-control form-control-sm validate" placeholder="Enter the Bank Name.">
                         </span>
                     </dd>
                 </dl>
-                <dl class="ctrl-box ctrl-inline w">
-                    <dt class="lh46 w180"><b class="v2-red-require">*</b>Branch&nbsp;&nbsp;Bank&nbsp;&nbsp;Name</dt>
+                <dl class="row mb-3">
+                    <dt class="col-sm-2 col-form-label"><b>*</b>Branch Bank Name</dt>
                     <dd>
-                        <span class="ctrl-item">
+                        <span class="col-sm-10">
                             <input name="bank_branch_name" value=""
-                                   type="text" class="w380 h46"
+                                   type="text" class="form-control form-control-sm validate "
                                    placeholder="Enter the Branch Bank Name">
-                            <span class="ctrl-notice">Please fill in the bank + city name + branch.</span>
-                            <span class="ctrl-tip  ctrl-tip-inline error"></span>
                         </span>
                     </dd>
                 </dl>
                   </div>
+                  <div style="margin: 30px;">
             <p class="f18 c42 mt40 mb20" >Store Management Information</p>
-            <dl class="ctrl-box ctrl-inline w" >
-                <dt class="lh46 w180"><b class="v2-red-require">*</b>Store Name</dt>
+            <dl class="row mb-3" >
+                <dt class="col-sm-2 col-form-label"><b class="">*</b>Store Name</dt>
                 <dd>
-                    <span class="ctrl-item">
+                    <span class="col-sm-10">
                         <input name="store_name" id="store_name" value=""
-                               type="text" class="w380 h46" placeholder="Store name can not be modified.">
-                        <span class="ctrl-tip  ctrl-tip-inline error"></span>
+                               type="text" class="form-control form-control-sm validate" placeholder="Store name can not be modified.">
                     </span>
                 </dd>
             </dl>
+            </div>
 </div>
 <div style="background: #F4F4F4;margin-top:10px;">
             <div class="wrapper pt20 pb100">

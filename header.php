@@ -44,52 +44,24 @@ include ('auth.php');
 <!--css styles-->
 <link rel="stylesheet" href="styles.css">
 <title>Fashion Fix</title>
-<button type="button" class="btn btn-outliner-rgba-black-slight" data-bs-toggle="modal" data-bs-target="#sellersection" data-bs-whatever="@mdo">Seller Section</button>
+<button type="button" class="btn btn-outline-rgba-black-slight" Onclick="window.location.href='openshop.php'">Seller Section</button>
 
-<div class="modal fade" id="sellersection" tabindex="-1" aria-labelledby="sellersectionLabel" aria-hidden="true">
-	<div class="modal-dialog">
-	<div class="modal-content">
-		<div class="modal-header">
-			<h5 class="modal-title" id="sellersectionLabel">Seller Center</h5>
-		</div>
-		<div class="modal-body">
-		<form id="form_login" action="sellersection.php" method="POST" autocomplete="off">
-			<div class="md-form form-sm mb-5">
-				<i class="bi bi-person-fill"></i>
-				<label class="col-form-label">Username</label>
-				<input name="seller_name" type="text" class="form-control form-control-sm validate" required autofocus>
-			</div>
-			<div class="md-form form-sm mb-4">
-				<i class="bi bi-lock-fill"></i>
-				<label class="col-form-label" data-error="wrong" data-success="right">Password</label>
-				<input name="password" type="password"  class="form-control form-control-sm validate" required>
-			</div>
-			<button type="submit" class="btn btn-outline-info" name="Login">Login</button>
-		</form>
-		</div>
-		<div class="modal-footer">
-		<div class="options text-right">
-		<a href="resetpassword.php">Forgot password</a> <span class="seller_style1">|</span>
-		<a href="openshop.php" >register a shop</a>
-		</div>
-		<button type="button" class="btn btn-outline-info waves-effect ml-auto" data-bs-dismiss="modal">Close</button>
-		</div>
-	</div>
-  	</div>
-</div>
 
-<nav class="navbar navbar-secondary bg-secondary">
+
+
+<nav class="navbar navbar-expand-lg navbar-secondary bg-secondary">
 	<div class="container-fluid">
-	<div class="col-md-6 flex-direction-row flex-justify-center flex-align-center">
+	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+	    <div class="col-md-6 flex-direction-row flex-justify-center flex-align-center">
 				<h2 class="align-text-center">
 				<a class="navbar-brand" href="index.php">
-					<h2> FASHION FIX</h2>
+					<h2 style="color: rgb(0, 0, 0);"> FASHION FIX</h2>
 				</a>
 				</h2>
 				</div>
 
-
-</a>
 <?php if ( isset( $firstname ) ) : ?>
 
 <?php
@@ -101,7 +73,7 @@ $sql = "SELECT * FROM customer_info WHERE unique_id = $user_id";
 							$role = $row['role'];
                             if ($role === "1"|| $role ==="2") {
 					echo '<div class="session_data">
-					<a class="nav-link " href="addproduct.php" aria-disabled="true">add Product</a>
+					<a class="nav-link " href="addproduct.php" aria-disabled="true" style="color: rgb(0, 0, 0);">Add Product</a>
 					</div>
 					';
 
@@ -110,17 +82,29 @@ $sql = "SELECT * FROM customer_info WHERE unique_id = $user_id";
 
 
 ?>
-<div>
-<a class="nav-link " href="viewproduct.php" aria-disabled="true">View Product</a>
+<div class="navbarbrand" >
+<a class="nav-link " href="viewproduct.php" aria-disabled="true" style="color: rgb(0, 0, 0);">View Product</a>
 </div>
 <div>
-<a class="nav-link " href="logout.php" aria-disabled="true">Logout</a>
+<a class="nav-link " href="logout.php" aria-disabled="true" style="color: rgb(0, 0, 0);">Logout</a>
 
 </div>
 <div>
 
-<a class="nav-link " href="" tabindex="-1" aria-disabled="true" ><?php echo ''.$firstname.'  '.$lastname.''; ?></a>
+<a class="nav-link " href="" tabindex="-1" aria-disabled="true" style="color: rgb(0, 0, 0);" ><?php echo ''.$firstname.'  '.$lastname.''; ?></a>
 
+</div>
+<div>
+<a href="myWishlist.php">
+<i  class="bi bi-heart" style="color: rgb(0, 0, 0);" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"></i>
+</a>
+</div>
+
+<div>
+
+<a href="shopcart.php">
+<i class="bi bi-cart3" style="color: rgb(0, 0, 0);" data-bs-toggle="tooltip" data-bs-placement="top" title="Shopping"></i>
+</a>
 </div>
 
 <?php else : ?>
@@ -179,7 +163,7 @@ $sql = "SELECT * FROM customer_info WHERE unique_id = $user_id";
 									<div class="modal-footer">
 									<div class="options text-center text-md-right mt-1">
 										<p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
-										<p>Forgot <a href="#" class="blue-text">Password?</a></p>
+										<p>Forgot <a href="resetpassword.php" class="blue-text">Password?</a></p>
 									</div>
 									<button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
 									</div>
@@ -256,25 +240,16 @@ $sql = "SELECT * FROM customer_info WHERE unique_id = $user_id";
 									</div>
 										<!--Modal: Login / Register Form modal button-->
 
-
-
-						<a href="" class="btn btn-default btn-rounded my-3" data-toggle="modal" data-target="#modalLRForm">
+						<a href="" class="btn btn-default btn-rounded my-3" data-toggle="modal" data-target="#modalLRForm" data-bs-toggle="tooltip" data-bs-placement="top" title="login/signup">
 															<i class="bi bi-person-fill"></i>
-														</a>
+						</a>
 
 
 						<?php endif ?>
 
 
 
-						<a href="Wishlist.php">
 
-						<i  class="bi bi-heart"></i>
-</a>
-
-<a href="shoppingCart.html">
-	<i class="bi bi-cart3"></i>
-	</a>
 
 
 									<!--end  of modal-->
@@ -296,10 +271,10 @@ $sql = "SELECT * FROM customer_info WHERE unique_id = $user_id";
 						<a type="button" class="btn btn-lg drop-toggle" id="dropdownMenuwomen" data-bs-toggle="dropdown" aria-expanded="false" data-bs-women="10,20">
 						Women
 						</a>
-					<ul class="dropdown-menu" aria-labelledby="dropdownMenuMen">
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuWomen">
 						<li><a class="dropdown-item" href="women_tshirts.php">Tshirts</a></li>
 						<li><a class="dropdown-item" href="women_jeans.php">Jeans</a></li>
-						<li><a class="dropdown-item" href="Blousers.php">Blousers</a></li>
+						<li><a class="dropdown-item" href="Blousers.php">Tops</a></li>
 						<li><a class="dropdown-item" href="Bras.php">Bras</a></li>
 						<li><a class="dropdown-item" href="womenShoes.php">Shoes</a></li>
 						<li><a class="dropdown-item" href="womendenim.php">Denim</a></li>
@@ -315,7 +290,7 @@ $sql = "SELECT * FROM customer_info WHERE unique_id = $user_id";
 				<a type="button" class="btn btn-lg drop-toggle" id="dropdownMenumen" data-bs-toggle="dropdown" aria-expanded="false" data-bs-women="10,20">
 				Men
 					</a>
-				<ul class="dropdown-menu" aria-labelledby="dropdownMenuWomen">
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenuMen">
 					<li><a class="dropdown-item" href="men_jeans.php">Jeans</a></li>
 					<li><a class="dropdown-item" href="men_shorts.php">shorts</a></li>
 					<li><a class="dropdown-item" href="men_tshirts.php">Shirts</a></li>
@@ -326,21 +301,13 @@ $sql = "SELECT * FROM customer_info WHERE unique_id = $user_id";
 
 
 				</div>
-			<div class="dropdown me-1">
-				<a type="button" class="btn btn-lg drop-toggle" id="dropdownMenuchildren" data-bs-toggle="dropdown" aria-expanded="false" data-bs-women="10,20">
-				Kids
-				</a>
-				<ul class="dropdown-menu" aria-labelledby="dropdownMenuKids">
-				<li><a class="dropdown-item" href="Boys.html">Boys</a></li>
-				<li><a class="dropdown-item" href="Girls.html">Girl</a></li>
-				</ul>
-				</div>
+
 				<button type="button" class="btn btn-lg" Onclick="window.location.href='Sale.php'"> Sales</button>
 
 				<div id="searchform">
 					<form class="d-flex">
 				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success" type="submit">Search</button>
+				<button class="btn btn-outline-secondary" type="submit">Search</button>
 			</form>
 			</div>
 		</div>

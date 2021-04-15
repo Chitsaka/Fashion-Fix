@@ -4,7 +4,7 @@ require 'header.php';
 require_once 'dbConnect.php';
 
 
-$sql = 'SELECT * FROM product_details_men WHERE category = "jeans"';
+$sql = 'SELECT * FROM product_details_men WHERE category = "jeans" AND gender ="Men"';
 
 	$results = mysqli_query( $conn, $sql );
 

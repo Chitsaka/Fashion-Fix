@@ -4,7 +4,7 @@ require 'header.php';
 require_once 'dbConnect.php';
 
 
-$sql = 'SELECT * FROM product_details_women WHERE category = "skirts"';
+$sql = 'SELECT * FROM product_details_men WHERE category = "skirts" AND gender ="Women"';
 
 	$results = mysqli_query( $conn, $sql );
 
@@ -19,9 +19,10 @@ if ( $results ) {
 				// Code...
 				$product_id = $women_skirts['unique_id'];
                 $img        = $women_skirts['image'];
+                echo $img;
 
 				echo '<div class="card" style="width: 18rem;">
-				<img src="' . $women_skirts['image'] . '.jfif" class="card-img-top" alt="...">
+				<img src="images/' . $img .'.jfif" class="card-img-top" alt="...">
 				<div class="card-body">
 				  <h5 class="card-title">' . $women_skirts['productName'] . '</h5>
 				  <p class="card-text">' . $women_skirts['description'] . '</p>
