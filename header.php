@@ -162,7 +162,7 @@ $sql = "SELECT * FROM customer_info WHERE unique_id = $user_id";
 									<!--Footer-->
 									<div class="modal-footer">
 									<div class="options text-center text-md-right mt-1">
-										<p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
+										<!--<p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>-->
 										<p>Forgot <a href="resetpassword.php" class="blue-text">Password?</a></p>
 									</div>
 									<button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
@@ -243,25 +243,12 @@ $sql = "SELECT * FROM customer_info WHERE unique_id = $user_id";
 						<a href="" class="btn btn-default btn-rounded my-3" data-toggle="modal" data-target="#modalLRForm" data-bs-toggle="tooltip" data-bs-placement="top" title="login/signup">
 															<i class="bi bi-person-fill"></i>
 						</a>
-
-
 						<?php endif ?>
-
-
-
-
-
-
-									<!--end  of modal-->
-													</div>
-
-													<!--end of container-->
-
-
-	<!--navigation-->
-
+<!--end  of modal-->
+</div>
+<!--end of container-->
+<!--navigation-->
 </nav>
-
 
 			<!--dropdown menu-->
 	<nav class="navbar navbar-expand-lg d-flex">
