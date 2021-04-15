@@ -30,34 +30,69 @@
 	<link rel="stylesheet" href="styles.css">
 	<title>Fashion-Fix | Add Product</title>
 	<?php include 'header.php'; ?>
+	<style>
+
+.container.addprodpage{
+			box-sizing:border-box;
+			border:2px purple solid;
+			border-radius:10px;
+
+			display:flex;
+		}
+		/*form{
+		padding:40px;
+		margin-left:30px;
+		}*/
+	.img-fluid{
+		padding: 10px;
+	}
+	input{
+		border-radius:50px;
+	}
+	/*
+	button.btn{
+		background-color:purple;
+		border: 2px white solid;
+		border-radius:20px;
+		margin: 10px;
+		font-size:15px;
+	}
+	button.btn:hover{
+		cursor: pointer;
+	}*/
+
+</style>
 </head>
 <body>
-<div class="container-fluid">
-<form method="POST" action="" enctype="multipart/form-data">
+<div class="container addprodpage">
+	<div class=" col-4">
+			<img src="card.jfif" alt="" class="img-fluid" width="400px" height="400px">
+		</div>
+    <form method="POST" action="" enctype="multipart/form-data">
 			<div class="form-elements col-6">
-				<div >
+				<div class ="col-mb-3">
 					<label for="name">Product Name</label>
 					<input type="text" name="prod_name" id="name" class="form-control form-control-sm validate" required>
 				</div>
-				<div>
+				<div class ="col-mb-3">
 					<label for="image">Product Image</label>
 					<input type="file" accept="image/*" name="prod_image" id="image" class="form-control form-control-sm validate" required>
 				</div>
-				<div >
+				<div class ="col-mb-3">
 					<label for="description">Product Description</label>
 					<input type="text" name="prod_desc" id="description" class="form-control form-control-sm validate" required>
 				</div>
-				<div >
+				<div class ="col-mb-3">
 					<label for="cost">Product Price</label>
 					<input type="number" name="prod_price" id="cost" class="form-control form-control-sm validate" required>
 				</div>
-				<div >
+				<div class ="col-mb-3">
 					<p>Section</p>
 					<input type="radio" id="men" name="section" value="Men" required><label for="men">Men</label>
 					<input type="radio" id="women" name="section" value="Women" required><label for="women">Women</label>
 
 				</div>
-				<div >
+				<div class ="col-mb-3">
 				<label for="categorydropdown">Category</label>
 				<select name="category[]" id="categorydropdown">
 				<option disabled selected>Select Category</option>

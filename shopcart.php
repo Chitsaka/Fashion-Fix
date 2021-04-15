@@ -34,31 +34,47 @@ if (isset($user_id)){
 </head>
 <body>
 <?php
-$sql = "SELECT checkout.post_id, product_details_men.description, product_details_men.image, checkout.unique_id,
-product_details_men.productName, product_details_men.price, checkout.status
+/*$sql = "SELECT checkout.post_id, product_details.description, product_details.image, checkout.unique_id,
+product_details.productName, product_details.price, checkout.status
 FROM  checkout
-INNER JOIN product_details_men ON checkout.post_id = product_details_men.unique_id
-WHERE checkout.unique_id = $user_id AND checkout.status ='0'";
+INNER JOIN product_details ON checkout.post_id = product_details.unique_id
+WHERE checkout.unique_id = $user_id AND checkout.status ='0'"; */
 
-$result = $conn->query($sql);
+$sql = "SELECT checkout.post_id, product_details.description, product_details.image, checkout.unique_id,
+product_details.productName, product_details.price
+FROM  checkout
+INNER JOIN product_details ON checkout.post_id = product_details.unique_id
+WHERE checkout.unique_id = $user_id";
 
-if ($result-> num_rows > 0) {
+
+$result = $conn->query( $sql );
+
+if ( $result-> num_rows > 0 ) {
+
     // output data of each row
     while ($row = $result->fetch_assoc()) {
         $img = $row ['image'];
 
-		echo' <div class="card" style="width: 18rem;">
+		echo' <div class="card col-md-4" style="width: 18rem;">
 		<img src="images/' . $img .'.jfif" class="card-img-top" alt="...">
 		<div class="card-body">
 		  <h5 class="card-title">' . $row['productName'] . '</h5>
 		  <p class="card-text">' . $row['description'] . '</p>
 		  <p class="card-text">' . $row['price'] . '</p>
-		  <a href="shoppingCart.php?id='.$user_id.'" class="btn">Add to Cart</a>
-		  <a href="placeorder.phpid='.$user_id.'" class="btn">Order now</a>
+		  <a href="shoppingCart.php?id='.$user_id.'" class="btn btn-outline-secondary">Add to Cart</a>
+		  <a href="placeorder.phpid='.$user_id.'" class="btn btn-outline-secondary">Order now</a>
 		</div>
+		<div class="def-number-input number-input safari_only mb-0 w-100">
+	<button onclick="this.parentNode.querySelector("input[type=number]").stepDown()"
+	  class="minus"></button>
+	<input class="quantity" min="0" name="quantity" value="1" type="number">
+	<button onclick="this.parentNode.querySelector("input[type=number]").stepUp()"
+	  class="plus"></button>
+  </div>
 	  </div>';
 
     }
+	echo '';
 }
 else {
 	echo $conn->error;
@@ -154,13 +170,7 @@ else {
 					  <p class="mb-3 text-muted text-uppercase small">Size: M</p>
 					</div>
 					<div>
-					  <div class="def-number-input number-input safari_only mb-0 w-100">
-						<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-						  class="minus"></button>
-						<input class="quantity" min="0" name="quantity" value="1" type="number">
-						<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-						  class="plus"></button>
-					  </div>
+
 					</div>
 				  </div>
 				  <div class="d-flex justify-content-between align-items-center">

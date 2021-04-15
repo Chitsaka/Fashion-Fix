@@ -20,11 +20,17 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <link rel="stylesheet" href="styles.css">
+<?php include 'header.php';?>
+<style>
+.container.shop{
+    border: 1px grey solid;
+}
+</style>
     <title>Fashion-Fix | Open a Shop</title>
 </head>
 <body>
-<div class="container justify-content-around">
-<p class="form-title">Fill in the store information</p>
+<p class="form-title" style="align:center;">Fill in the store information</p>
+<div class="container justify-content-around shop" style="margin-top:20px;">
     <form id="shop_info" class="row g-3" method="post" action ="sellersection.php" enctype="multipart/form-data">
         <dl class="col-md-4">
             <dt><b class="">*</b>Email</dt>
@@ -123,9 +129,10 @@
 
 </div>
 <!--bank info-->
-<div class=" " style="margin: 30px;">
+<p class="f18 c42 mt40 mb20">Settlement account information</p>
+<div class="container shop " style="margin: 30px;">
             <input type="hidden" id="payTypeID" name="payment_type" value="1">
-            <p class="f18 c42 mt40 mb20">Settlement account information</p>
+
             <div class="bankpay-box-info">
                 <dl class="row mb-3">
                     <dt class="col-sm-2 col-form-label"><b >*</b>Bank Account Name</dt>
@@ -181,20 +188,11 @@
             </dl>
             </div>
 </div>
-<div style="background: #F4F4F4;margin-top:10px;">
+<div >
             <div class="wrapper pt20 pb100">
-                <div class="gobal-box-info">
-                    <div class="f14 c40">
-                    <input type="checkbox" id="agreementID" checked="checked">
-                    I have read and agreed to the
-                    <a href="" target="_blank"
-                        style="color: #4A90E2;text-decoration: underline;">agreement</a>
-                </div>
-            </div>
-        <div style="background: #F4F4F4;margin-top:10px;">
+        <div >
             <div class="tc mt50" style="padding:80px;">
-                <span class="v2-btn v2-white-btn mr60"><a href="index.php?act=store_joinin&op=index">Previous step</a></span>
-                <button class="v2-btn v2-blue-btn" id="btn_apply_company_next" name ="submit">Submit</button>
+                <button class="btn btn-outline-secondary" id="btn_apply_company_next" name ="submit">Submit</button>
                 <span class="v2-btn v2-grey-btn" style="display:none" id="btn_apply_grey">Submit</span>
             </div>
         </div>

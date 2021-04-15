@@ -75,6 +75,9 @@ $sql = "SELECT * FROM customer_info WHERE unique_id = $user_id";
 					echo '<div class="session_data">
 					<a class="nav-link " href="addproduct.php" aria-disabled="true" style="color: rgb(0, 0, 0);">Add Product</a>
 					</div>
+					<div class="navbarbrand" >
+					<a class="nav-link " href="viewproduct.php" aria-disabled="true" style="color: rgb(0, 0, 0);">View Product</a>
+					</div>
 					';
 
                             }
@@ -82,9 +85,7 @@ $sql = "SELECT * FROM customer_info WHERE unique_id = $user_id";
 
 
 ?>
-<div class="navbarbrand" >
-<a class="nav-link " href="viewproduct.php" aria-disabled="true" style="color: rgb(0, 0, 0);">View Product</a>
-</div>
+
 <div>
 <a class="nav-link " href="logout.php" aria-disabled="true" style="color: rgb(0, 0, 0);">Logout</a>
 
@@ -221,7 +222,9 @@ $sql = "SELECT * FROM customer_info WHERE unique_id = $user_id";
 										<!--Footer-->
 										<div class="modal-footer">
 										<div class="options text-right">
-											<p class="pt-1">Already have an account? <a href="#" class="blue-text">Log In</a></p>
+
+											<p class="pt-1">Are you a seller? <a href="openshop.php" class="blue-text">Sign Up</a></p>
+
 										</div>
 										<button type="button" class="btn btn-outline-info waves-effect ml-auto" data-dismiss="modal">Close</button>
 										</div>

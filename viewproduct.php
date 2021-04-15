@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
 <?php
 require 'header.php';
 require 'auth.php';
@@ -12,7 +21,7 @@ require 'auth.php';
 </head>
 <body>
     <?php
-    $sql = "SELECT * FROM product_details_men WHERE sellerId = $user_id";
+    $sql = "SELECT * FROM product_details WHERE sellerId = $user_id";
 
 	$results = mysqli_query( $conn, $sql );
 
@@ -33,10 +42,7 @@ if ( $results ) {
 				<div class="card-body">
 				  <h5 class="card-title">' . $men_sweaters['productName'] . '</h5>
 				  <p class="card-text">' . $men_sweaters['description'] . '</p>
-				  <p class="card-text">' . $men_sweaters['price'] . '</p>
-				  <a href="shoppingCart.php?id='.$product_id.'" class="btn">Add to Cart</a>
-				  <a href="Wishlist.php?id='.$product_id.'" class="btn">Wishlist</a>
-				  <a href="placeorder.php" class="btn">Order now</a>
+				  <p class="card-text">Ksh. ' . $men_sweaters['price'] . '/=</p>
 				</div>
 			  </div>';
 
@@ -47,7 +53,6 @@ if ( $results ) {
 	} else {
 		// Code...
 			echo 'no products available';
-			echo '<a href="addproduct.php" class="btn"> add product</a>';
 	}
 } else {
 		// Code...

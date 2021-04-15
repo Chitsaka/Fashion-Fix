@@ -38,9 +38,9 @@ if ( $results ) {
 				  <h5 class="card-title">' . $women_shoes['productName'] . '</h5>
 				  <p class="card-text">' . $women_shoes['description'] . '</p>
 				  <p class="card-text">Ksh. ' . $women_shoes['price'] . '/=</p>
-				  <a href="shoppingCart.php?id='.$product_id.'" class="btn">Add to Cart</a>
-				  <a href="wishlist.php?id='.$product_id.'" class="btn">Add to wishlist</a>
-				  <a href="placeorder.php" class="btn">Order now</a>
+				  <a href="shoppingCart.php?id='.$product_id.'" class="btn btn-outline-secondary">Add to Cart</a>
+				  <a href="wishlist.php?id='.$product_id.'" class="btn btn-outline-secondary">Add to wishlist</a>
+				  <a href="placeorder.php" class="btn btn-outline-secondary">Order now</a>
 				</div>
 			  </div>';
 
