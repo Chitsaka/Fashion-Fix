@@ -32,7 +32,7 @@ require 'header.php';
 require_once 'dbConnect.php';
 
 
-$sql = 'SELECT * FROM product_details_men WHERE category = "tops" AND gender ="Women"';
+$sql = 'SELECT * FROM product_details WHERE category = "tops" AND gender ="Women"';
 
 	$results = mysqli_query( $conn, $sql );
 
@@ -71,8 +71,8 @@ if ( $results ) {
 			';
 	} else {
 		// Code...
-			echo 'no products available';
-			echo '<a href="addproduct.php" class="btn"> add product</a>';
+			echo 'No products available';
+
 	}
 } else {
 		// Code...

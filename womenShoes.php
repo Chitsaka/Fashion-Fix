@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
-	<title>Fashion Fix | Women's Shoes</title>
+	<title>Fashion Fix | Women | Shoes</title>
 </head>
 <body>
 
@@ -15,7 +15,7 @@ require 'header.php';
 require_once 'dbConnect.php';
 
 
-$sql = 'SELECT * FROM product_details_men WHERE category = "shoes" AND gender ="Women"';
+$sql = 'SELECT * FROM product_details WHERE category = "shoes" AND gender ="Women"';
 
 	$results = mysqli_query( $conn, $sql );
 
@@ -50,8 +50,7 @@ if ( $results ) {
 			';
 	} else {
 		// Code...
-			echo 'no products available';
-			echo '<a href="addproduct.php" class="btn"> add product</a>';
+			echo 'No products available';
 	}
 } else {
 		// Code...

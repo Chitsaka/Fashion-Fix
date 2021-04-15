@@ -132,7 +132,7 @@ if (isset($_POST['addproduct'])) {
 
 
 					// Insert record!
-					$sql = 'INSERT INTO product_details_men ( productName, image, description, price, category,unique_id, gender, sellerId ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )';
+					$sql = 'INSERT INTO product_details ( productName, image, description, price, category,unique_id, gender, sellerId ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ? )';
 
 					// Prepare query!
 					if ($stmt = mysqli_prepare($conn, $sql)) {

@@ -43,7 +43,7 @@ include ('auth.php');
 
 <!--css styles-->
 <link rel="stylesheet" href="styles.css">
-<title>Fashion Fix</title>
+<title>Fashion Fix </title>
 <button type="button" class="btn btn-outline-rgba-black-slight" Onclick="window.location.href='openshop.php'">Seller Section</button>
 
 

@@ -4,7 +4,7 @@ require 'header.php';
 require_once 'dbConnect.php';
 
 
-$sql = 'SELECT * FROM product_details_men WHERE category = "shoes" AND gender ="Men"';
+$sql = 'SELECT * FROM product_details WHERE category = "shoes" AND gender ="Men"';
 
 	$results = mysqli_query( $conn, $sql );
 
@@ -39,7 +39,6 @@ if ( $results ) {
 	} else {
 		# code...
 			echo 'no products available';
-			echo '<a href="addproduct.php" class="btn"> add product</a>';
 	}
 
 	} else {

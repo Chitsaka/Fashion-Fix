@@ -47,8 +47,7 @@ if ( $results ) {
 			';
 	} else {
 		// Code...
-			echo 'no products available';
-			echo '<a href="addproduct.php" class="btn"> add product</a>';
+			echo 'No products available';
 	}
 } else {
 		// Code...
