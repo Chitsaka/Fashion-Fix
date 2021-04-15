@@ -63,7 +63,7 @@ if ( $result-> num_rows > 0 ) {
 
 	echo '	</div>
 	</div>
-	<button type="button" class="btn btn-outline-secondary">go to checkout</button>';
+	<a  class="btn btn-outline-secondary" href="checkout.php">go to checkout</a>';
 }
 else {
 	echo mysqli_error($conn);

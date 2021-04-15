@@ -14,7 +14,7 @@ require 'header.php';
 require_once 'dbConnect.php';
 
 
-$sql = 'SELECT * FROM product_details WHERE category = "shoes" AND gender ="Men"';
+$sql = 'SELECT * FROM product_details WHERE category = "Hoodies" AND gender ="Men"';
 
 	$results = mysqli_query( $conn, $sql );
 
@@ -26,17 +26,17 @@ if ( $results ) {
 		echo '<div class="container">
 		<div class="row justify-content-center">';
 
-		while ( $men_shoes = mysqli_fetch_assoc( $results ) ) {
+		while ( $men_hoodies = mysqli_fetch_assoc( $results ) ) {
 				// Code...
-				$product_id = $men_shoes['unique_id'];
-				$img        = $men_shoes['image'];
+				$product_id = $men_hoodies['unique_id'];
+				$img        = $men_hoodies['image'];
 
 				echo '<div class="card col-md-4" style="width: 18rem;">
 				<img src="images/' . $img .'.jfif" class="card-img-top" alt="...">
 				<div class="card-body">
-				  <h5 class="card-title">' . $men_shoes['productName'] . '</h5>
-				  <p class="card-text">' . $men_shoes['description'] . '</p>
-				  <p class="card-text">Ksh. ' . $men_shoes['price'] . '/=</p>
+				  <h5 class="card-title">' . $men_hoodies['productName'] . '</h5>
+				  <p class="card-text">' . $men_hoodies['description'] . '</p>
+				  <p class="card-text">Ksh. ' . $men_hoodies['price'] . '/=</p>
 				  <a href="shoppingCart.php?id='.$product_id.'" class="btn btn-outline-secondary">Add to Cart</a>
 				  <a href="Wishlist.php?id='.$product_id.'" class="btn btn-outline-secondary">Wishlist</a>
 				  <a href="placeorder.php" class="btn btn-outline-secondary">Order now</a>

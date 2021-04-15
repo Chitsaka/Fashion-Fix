@@ -106,6 +106,7 @@
 				<option value="Tshirts">Tshirts</option>
 				<option value="Dresses">Dresses</option>
 				<option value="Shorts">Shorts</option>
+				<option value="Hoodies">hoodies</option>
 				</select>
 				</div>
 

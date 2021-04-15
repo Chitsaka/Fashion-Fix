@@ -272,6 +272,7 @@ $sql = "SELECT * FROM customer_info WHERE unique_id = $user_id";
 						<li><a class="dropdown-item" href="Skirts.php">Skirts</a></li>
 						<li><a class="dropdown-item" href="women_Shorts.php">Shorts</a></li>
 						<li><a class="dropdown-item" href="swimsuits.php">swimsuits</a></li>
+						<li><a class="dropdown-item" href="women_hoodies.php">Hoodies</a></li>
 					</ul>
 					</div>
 
@@ -285,7 +286,7 @@ $sql = "SELECT * FROM customer_info WHERE unique_id = $user_id";
 					<li><a class="dropdown-item" href="men_tshirts.php">Shirts</a></li>
 					<li><a class="dropdown-item" href="menshoes.php">Shoes</a></li>
 					<li><a class="dropdown-item" href="men_denim.php">denim</a></li>
-					<li><a class="dropdown-item" href="men_sweater.php">Sweaters</a></li>
+					<li><a class="dropdown-item" href="men_hoodies.php">Hoodies</a></li>
 				</ul>
 
 
