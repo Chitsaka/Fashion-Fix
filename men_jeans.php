@@ -21,7 +21,7 @@ if ( $results ) {
 				$product_id = $men_jeans['unique_id'];
         $img        = $men_jeans['image'];
 
-				echo '<div class="card" style="width: 18rem;">
+				echo '<div class="card col-md-4" style="width: 18rem;">
 				<img src="images/' . $img .'.jfif" class="card-img-top" alt="...">
 				<div class="card-body">
 				  <h5 class="card-title">' . $men_jeans['productName'] . '</h5>

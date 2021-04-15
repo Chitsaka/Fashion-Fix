@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Fashion Fix | Women's Shoes</title>
+</head>
+<body>
+
 <?php
 require 'header.php';
 
@@ -26,7 +37,7 @@ if ( $results ) {
 				<div class="card-body">
 				  <h5 class="card-title">' . $women_shoes['productName'] . '</h5>
 				  <p class="card-text">' . $women_shoes['description'] . '</p>
-				  <p class="card-text">' . $women_shoes['price'] . '</p>
+				  <p class="card-text">Ksh. ' . $women_shoes['price'] . '/=</p>
 				  <a href="shoppingCart.php?id='.$product_id.'" class="btn">Add to Cart</a>
 				  <a href="wishlist.php?id='.$product_id.'" class="btn">Add to wishlist</a>
 				  <a href="placeorder.php" class="btn">Order now</a>

@@ -20,7 +20,7 @@ if ( $results ) {
 				$product_id = $women_dresses['unique_id'];
 				$img        = $women_dresses['image'];
 
-				echo '<div class="card" style="width: 18rem;">
+				echo '<div class="card col-md-4" style="width: 18rem;">
 				<img src="images/' . $img .'.jfif" class="card-img-top" alt="...">
 				<div class="card-body">
 				  <h5 class="card-title">' . $women_dresses['productName'] . '</h5>
