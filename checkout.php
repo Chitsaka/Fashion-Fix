@@ -1,3 +1,6 @@
+<?php
+    include 'header.php';
+    ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -6,14 +9,13 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.80.0">
-    <title>Checkout example · Bootstrap v5.0</title>
+    <title>Fashion Fix | Checkout </title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
 	<!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
 
 <!--icons-->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
@@ -29,9 +31,9 @@
 
 <script src="form-validation.js" defer></script>
 
-
-    <!-- Bootstrap core CSS -->
-<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap core CSS
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">-->
 
     <style>
       .bd-placeholder-img {
@@ -52,8 +54,9 @@
 
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
+
   </head>
-  <body class="bg-light">
+  <body class="">
 
 <div class="container">
   <main>
@@ -73,32 +76,32 @@
               <h6 class="my-0">Product name</h6>
               <small class="text-muted">Brief description</small>
             </div>
-            <span class="text-muted">$12</span>
+            <span class="text-muted"></span>
           </li>
           <li class="list-group-item d-flex justify-content-between lh-sm">
             <div>
               <h6 class="my-0">Second product</h6>
               <small class="text-muted">Brief description</small>
             </div>
-            <span class="text-muted">$8</span>
+            <span class="text-muted"></span>
           </li>
           <li class="list-group-item d-flex justify-content-between lh-sm">
             <div>
               <h6 class="my-0">Third item</h6>
               <small class="text-muted">Brief description</small>
             </div>
-            <span class="text-muted">$5</span>
+            <span class="text-muted"></span>
           </li>
           <li class="list-group-item d-flex justify-content-between bg-light">
             <div class="text-success">
               <h6 class="my-0">Promo code</h6>
               <small>EXAMPLECODE</small>
             </div>
-            <span class="text-success">−$5</span>
+            <span class="text-success"></span>
           </li>
           <li class="list-group-item d-flex justify-content-between">
             <span>Total (USD)</span>
-            <strong>$20</strong>
+            <strong></strong>
           </li>
         </ul>
 
@@ -259,8 +262,8 @@
     <p class="mb-1">&copy; 2017–2021 Company Name</p>
     <ul class="list-inline">
       <li class="list-inline-item"><a href="#">Privacy</a></li>
-      <li class="list-inline-item"><a href="#">Terms</a></li>
-      <li class="list-inline-item"><a href="#">Support</a></li>
+      <li class="list-inline-item"><a href="terms.php">Terms</a></li>
+      <li class="list-inline-item"><a href="contact.php">Support</a></li>
     </ul>
   </footer>
 </div>

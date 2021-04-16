@@ -41,7 +41,6 @@ if ( $results ) {
 				  <a href="checkout.php" class="btn btn-outline-secondary">Order now</a>
 				</div>
 			  </div>>';
-
 			}
 			echo '	</div>
 			</div>

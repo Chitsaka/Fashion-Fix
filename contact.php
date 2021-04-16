@@ -20,8 +20,8 @@ require_once 'dbConnect.php';
 ?>
 <div class=" container">
 <div class="row justify-content-center">
-<div class="card col-md-4" style="width: 50rem;">
-<div class="card-body">
+<div class="card" style="width: 40rem;">
+<div class="card-body justify-content-center">
 <h5 class="card-title">Email us</h5>
 <form action="" method="POST">
 <div class="form-elements col-8">
@@ -37,11 +37,11 @@ require_once 'dbConnect.php';
 		<input type="email" name="email" id="email_address" class="form-control form-control-sm validate">
 	</div>
 
-	<div class="col-md-4">
+	<div class="">
 		<label for="message">Message</label>
-		<textarea name="message" id="message" cols="200" rows="10" class="form-control form-control-sm validate"></textarea>
+		<textarea name="message" id="message" col="70" rows="10" class="form-control form-control-sm validate"></textarea>
 	</div>
-	<div class="col-md-4">
+	<div class="col-md-4 p-3">
 	<button class="btn btn-outline-secondary" name = "send">send</button>
 	</div>
 </div>
