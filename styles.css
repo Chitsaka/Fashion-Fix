@@ -7,10 +7,9 @@
 }
 
 body {
-	font-family: sans-serif;
 	margin: 0;
 	padding: 0;
-	/*background: #fcd5d5;*/
+	background: #fcd5d5;
 }
 
 
@@ -20,17 +19,19 @@ body {
 
 a.btn{
 	margin-right: 10px;
-	color: darkgrey;
+	color: black;
 }
 
 button.btn{
 	margin-right: 10px;
-	color: darkgrey;
+	color: black;
 }
 /*
 li {
 	display: block;
 	transition-duration: 0.5s;
+	#f78d96
+	#f0929a
  }
 
  li:hover {
@@ -134,8 +135,6 @@ li {
 						/*background-color:cornsilk;*/
 						text-decoration: none;
 				}
-
-				.col-md-9 .col-md-3 .row .col
 
 				footer{
 					padding: 30px;

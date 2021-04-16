@@ -55,7 +55,7 @@ require_once 'dbConnect.php';
 	<input type="email" name="email" class="form-control form-control-sm validate" id="resetpass">
 	</div>
 
-	<button class="btn btn-outline-info" name = "send">Reset Password</button>
+	<button class="btn btn-outline-secondary" name = "send">Reset Password</button>
 	</div>
 </form>
 	</div>
@@ -84,8 +84,8 @@ require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 
 //config
-$username = "emoblucky@gmail.com";
-$password = "gmail.password";
+$username = "fashionfixsup@gmail.com";
+$password = "Qwerty254";
 //Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
 

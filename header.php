@@ -49,7 +49,7 @@ include ('auth.php');
 
 
 
-<nav class="navbar navbar-expand-lg navbar-secondary bg-secondary">
+<nav class="navbar navbar-expand-lg" style="background-color:#bf0854; font-family: sans-serif;">
 	<div class="container-fluid">
 	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -287,8 +287,8 @@ $sql = "SELECT * FROM customer_info WHERE unique_id = $user_id";
 					<li><a class="dropdown-item" href="menshoes.php">Shoes</a></li>
 					<li><a class="dropdown-item" href="men_denim.php">denim</a></li>
 					<li><a class="dropdown-item" href="men_hoodies.php">Hoodies</a></li>
+					<li><a class="dropdown-item" href="men_sweater.php">sweaters</a></li>
 				</ul>
-
 
 				</div>
 

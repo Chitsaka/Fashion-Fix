@@ -40,7 +40,7 @@ if ( $results ) {
 				  <p class="card-text">Ksh. ' . $women_hoodies['price'] . '/=</p>
 				  <a href="shoppingCart.php?id='.$product_id.'" class="btn btn-outline-secondary">Add to Cart</a>
 				  <a href="wishlist.php?id='.$product_id.'" class="btn btn-outline-secondary">Add to wishlist</a>
-				  <a href="placeorder.php" class="btn btn-outline-secondary">Order now</a>
+				  <a href="checkout.php" class="btn btn-outline-secondary">Order now</a>
 				</div>
 			  </div>';
 

@@ -66,7 +66,7 @@ if ( $result-> num_rows > 0 ) {
 							<i class="fa fa-star fa-sm text-primary"></i>
 							</div>
 		<a href="shoppingCart.php?id='.$user_id.'" class="btn btn-outline-secondary">Add to Cart</a>
-		<a href="placeorder.phpid='.$user_id.'" class="btn btn-outline-secondary">Order now</a>
+		<a href="checkout.php='.$user_id.'" class="btn btn-outline-secondary">Order now</a>
 	  </div>
 	</div>';
   	}
