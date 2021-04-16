@@ -49,18 +49,21 @@ include ('auth.php');
 
 
 
-<nav class="navbar navbar-expand-lg" style="background-color:#bf0854; font-family: sans-serif;">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#bf0854; font-family: sans-serif;">
 	<div class="container-fluid">
-	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-	    <div class="col-md-6 flex-direction-row flex-justify-center flex-align-center">
+
+	  <div class="col-6 flex-direction-row flex-justify-center flex-align-center">
 				<h2 class="align-text-center">
 				<a class="navbar-brand" href="index.php">
 					<h2 style="color: rgb(0, 0, 0);"> FASHION FIX</h2>
 				</a>
 				</h2>
 				</div>
+				<button style="color: rgb(0, 0, 0);" class="navbar-toggler btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+
+	<div class="collapse navbar-collapse col-5" id="navbarSupportedContent">
 
 <?php if ( isset( $firstname ) ) : ?>
 
@@ -95,16 +98,16 @@ $sql = "SELECT * FROM customer_info WHERE unique_id = $user_id";
 <a class="nav-link " href="" tabindex="-1" aria-disabled="true" style="color: rgb(0, 0, 0);" ><?php echo ''.$firstname.'  '.$lastname.''; ?></a>
 
 </div>
-<div>
+
+<div class="col-1 p-3">
 <a href="myWishlist.php">
 <i  class="bi bi-heart" style="color: rgb(0, 0, 0);" data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist"></i>
 </a>
 </div>
 
-<div>
-
+<div class="col-1">
 <a href="shopcart.php">
-<i class="bi bi-cart3" style="color: rgb(0, 0, 0);" data-bs-toggle="tooltip" data-bs-placement="top" title="Shopping"></i>
+<i class="bi bi-cart3" style="color: rgb(0, 0, 0);" data-bs-toggle="tooltip" data-bs-placement="top" title="Shopping Cart"></i>
 </a>
 </div>
 
@@ -249,11 +252,12 @@ $sql = "SELECT * FROM customer_info WHERE unique_id = $user_id";
 						<?php endif ?>
 </div>
 <!--end of container-->
+</div>
 <!--navigation-->
 </nav>
 
 			<!--dropdown menu-->
-	<nav class="navbar navbar-expand-lg d-flex">
+	<nav class="navbar navbar-expand-lg nnavbar-light d-flex">
 		<div class="container-fluid">
 				<div class="d-flex">
 					<div class="dropdown">

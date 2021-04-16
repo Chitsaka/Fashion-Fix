@@ -19,6 +19,10 @@ body{
 require_once 'dbConnect.php';
 ?>
 <div class=" container">
+<div class="row justify-content-center">
+<div class="card col-md-4" style="width: 50rem;">
+<div class="card-body">
+<h5 class="card-title">Email us</h5>
 <form action="" method="POST">
 <div class="form-elements col-8">
 	<div class="form-elementscol-mb-4">
@@ -43,7 +47,8 @@ require_once 'dbConnect.php';
 </div>
 </form>
 </div>
-
+</div>
+</div>
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
